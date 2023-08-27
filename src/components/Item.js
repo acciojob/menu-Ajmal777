@@ -2,7 +2,7 @@ import React from "react";
 
 const Item = ({item})=>{
     return (
-        <div>
+        <div data-test-id={`menu-item-${item.category}`}>
             <img src={item.img} />
             <div>
                 <p>{item.title}</p>
