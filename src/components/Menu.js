@@ -92,13 +92,13 @@ const Menu = () => {
     }
 
     return (
-        <div className="menu">
+        <div className="menu" id="main">
             <h1>Our Menu</h1>
             <div className="categories">
                 <button onClick={() => handleClick('')}>All</button>
-                <button onClick={() => handleClick('breakfast')}>Breakfast</button>
-                <button onClick={() => handleClick('lunch')}>Lunch</button>
-                <button onClick={() => handleClick('shakes')}>Shakes</button>
+                <button id="filter-btn-1" onClick={() => handleClick('breakfast')}>Breakfast</button>
+                <button id="filter-btn-2" onClick={() => handleClick('lunch')}>Lunch</button>
+                <button id="filter-btn-3" onClick={() => handleClick('shakes')}>Shakes</button>
             </div>
             {items}
         </div>
